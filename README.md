@@ -1,20 +1,56 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🛡️ CyberGuardian-AI
 
-# Run and deploy your AI Studio app
+CyberGuardian-AI is an intelligent cybersecurity platform that combines **Artificial Intelligence, IoT, and Network Security** to detect suspicious activities and network attacks in real time.
 
-This contains everything you need to run your app locally.
+The system uses IoT devices to monitor network traffic, applies anomaly detection and deep learning techniques to identify unusual behavior, and generates instant alerts to improve security.
 
-View your app in AI Studio: https://ai.studio/apps/acc709e8-40c3-4848-b381-7708da88c54e
+## Features
+- 🌐 Real-time network monitoring  
+- 🧠 AI-based anomaly detection  
+- 🚨 Instant intrusion alerts  
+- 📡 IoT data collection using Raspberry Pi & ESP32  
+- 📊 Security dashboard and analytics  
+- 🔒 Network threat detection and prevention  
 
-## Run Locally
+## Architecture
+```text
+IoT Devices
+(Raspberry Pi / ESP32)
+          ↓
+Network Traffic Collection
+          ↓
+Data Processing
+          ↓
+AI Detection Engine
+          ↓
+Threat Analysis
+          ↓
+Alert System + Dashboard
+```
 
-**Prerequisites:**  Node.js
+## Technologies
+- Python  
+- Deep Learning  
+- Anomaly Detection  
+- IoT (Raspberry Pi, ESP32)  
+- Network Security  
+- FastAPI / Flask  
+- MQTT  
+- TensorFlow / PyTorch  
 
+## Project Goal
+Build an intelligent IDS (Intrusion Detection System) capable of detecting abnormal network behavior and improving cybersecurity through AI and IoT technologies.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Future Improvements
+- Edge AI deployment  
+- Automated response system  
+- Threat prediction  
+- Mobile monitoring application  
+- Cloud integration  
+
+## Author
+**Benaboud Roqia**
+
+---
+
+Made with ❤️ for AI, IoT & Cybersecurity
