@@ -1,0 +1,6 @@
+{
+  "name": "CyberGuardian Dashboard",
+  "description": "A real-time cybersecurity network monitoring dashboard offering traffic analyzer, sensor metrics, live log stream, and interactive alert management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

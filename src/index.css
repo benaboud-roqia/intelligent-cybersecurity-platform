@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-primary: #00677c;
+  --color-primary-container: #4dc8e8;
+  --color-secondary: #4e5d87;
+  --color-secondary-container: #becefe;
+  --color-tertiary: #5d3fe0;
+  --color-background: #f7f9fc;
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #3d494d;
+  --color-error: #ba1a1a;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f4f7;
+  --color-surface-container-high: #e6e8eb;
+  --color-outline-variant: #bcc8cd;
+
+  --animate-scan: scan 4s linear infinite;
+  --animate-pulse-slow: pulse-glow 2s infinite;
+
+  @keyframes scan {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(500%); }
+  }
+  @keyframes pulse-glow {
+    0% { box-shadow: 0 0 0 0 rgba(0, 103, 124, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(0, 103, 124, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(0, 103, 124, 0); }
+  }
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 103, 124, 0.08);
+  box-shadow: 0 4px 20px -2px rgba(0, 103, 124, 0.03);
+}
+
+.grid-bg {
+  background-image: radial-gradient(circle, #cbd5e1 1.2px, transparent 1.2px);
+  background-size: 32px 32px;
+}
+
+.scanline {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #5dd5f6, transparent);
+  opacity: 0.7;
+}
+
